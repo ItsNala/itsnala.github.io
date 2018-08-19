@@ -166,7 +166,7 @@
 	<div class="row">
 		<div class="text-center">
 			<h2> Deep learning for medical image analysis </h2>
-			<p class="lead"> In the following sections, the reader will first be introduced to principles of deep learning and semantic segmentation challenges of natural and medical images. Secondly, two state-of-the-art architectures are examined, which have outperformed previous segmentation techniques by a magnitude: The U-Net architecture (REFERENCE) and Mask R-CNNs (REFERENCE). Both techniques are supervised learning techniques and require costly annotated ground truth data, lastly we will discuss common sources for open-source medical imaging data and challenges </p>
+			<p class="lead"> Convolutional neural networks have consitently outperformed classical machine learning techniques, such as support vector machines. Substantial work in classical machine learning is dedictated towards the annotation of appropriate features, in contrast, deep neural networks process raw input and automatically learn features from training data. The performance of the a given architecture is dependent on many factors, including network width, learning rate, or drop-out. It it theresore crucial to understand the data and architecture for the task at hand. In the following sections, the reader will first be introduced to principles of deep learning and semantic segmentation challenges of natural and medical images. Secondly, two state-of-the-art architectures are examined, which have outperformed previous segmentation techniques by a magnitude: The U-Net architecture (Ronneberger et at., 2015) and Mask R-CNNs (He et al., 2017). Both techniques are supervised learning techniques and require costly annotated ground truth data, lastly we will discuss common sources for open-source medical imaging data and challenges </p>
 		</div>
 	</div>
 </div>
@@ -263,7 +263,7 @@
 <div class="container">
 	<div class="row">
 		<div>
-			<p align="justify"> The up-convolution uses a learned kernel to map each feature to the 2x2 pixel output vector, again followed by a non-linear activation function. A common method to up-sample effectively, i.e. to recover the original location of the pooled values, is fractionally strided convolution. To go into the underlying mechanisms of this technique exceeds the scope of this blog post, however, more information can be found (HERE). </p>
+			<p align="justify"> The up-convolution uses a learned kernel to map each feature to the 2x2 pixel output vector, again followed by a non-linear activation function. A common method to up-sample effectively, i.e. to recover the original location of the pooled values, is fractionally strided convolution. To go into the underlying mechanisms of this technique exceeds the scope of this blog post, however, more information can be found <a href="https://towardsdatascience.com/up-sampling-with-transposed-convolution-9ae4f2df52d0"> here </a>. </p>
 		</div>
 		<div class="center">
 			<img src="img/upconvolution.png" class="img-responsive">
