@@ -27,12 +27,13 @@ html, body {
 }
 
 #home {
-	background: url(img/BG1.jpg) no-repeat center center fixed;
+	background: url(img/background.jpg) no-repeat center center fixed;
 	display: table;
 	height: 100%;
 	position: relative;
 	width: 100%;
 	background-size: cover;
+	font-family: "Times New Roman";
 }
 .landing-text {
 	display: table-cell;
@@ -57,7 +58,7 @@ html, body {
 	width: 80%;
 }
 #fixed {
-	background: url(img/BG2.png) no-repeat center center fixed;
+	background: url(img/BG1.jpg) no-repeat center center fixed;
 	display: table;
 	height: 60%;
 	position: relative;
