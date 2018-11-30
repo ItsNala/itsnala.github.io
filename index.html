@@ -37,8 +37,8 @@
 
 <div id="home">
 	<div class="landing-text">
-		<h1>Welcome</h1>
-		<h6> Democratizing Deep Learning for Medical Image Analysis. </h6>
+		<h6>Hi, I'm </h6>
+		<h1> Nadja Bekele </h1>
 		<br> 
 		 <a href="https://github.com/ItsNala" class="btn btn-default btn-lg"> Take me to the project </a>
 	</div>
@@ -51,7 +51,7 @@
 	<div class="row">
 		<div class="text-center">
 			<h2> My Mission </h2>
-			<p class="lead"> Recently, quantitative medical imaging has started to leverage on developments in computer vision and deep learning. State-of-the-art models in deep learning can be applied across various fields in medical imaging, such as in the detection of brain abnormalities and cognitive computing. In the focus of this work lies the application of deep convolutional neural networks to segment brain lesions on MR scans. </p>
+			<p class="lead"> A post graduate student at King’s College London seeking to improve intelligent health technology to better understand medical imaging data. Aimed to employ solutions from deep learning for classification and segmentation of medical image data to investigate surrogate biomarkers of brain pathologies and provide decision support in the diagnosis process. </p>
 		</div>
 	</div>
 </div>
@@ -63,7 +63,7 @@
 		<div>
 			<h4> My Research </h4>
 			<p align="justify"> Medical imaging is a key technology in medicine which makes non-invasively visible, what would otherwise remain hidden. It requires many years of training for radiologists and clinicians to recognize critical patterns in medical images to distinguish between healthy and pathological structures, to evaluate the development of treatment effects and plan image-based surgical procedures. Often to fully understand the nature of a pathology, one type of images might not be enough, but a multitude of imaging modalities is required, and the outcome of particularly subtle pathologies are still exposed to a factor of human-error and the risk of false positives and negatives. While the task at hand is crucial to the patient’s health development, it is a challenge costly in time, resources, and risk. </p>
-			<p align="justify"> A challenge for researchers is to develop technology to help doctors augment performance in medical image diagnosis, requiring integrative information from neuroimaging, information theory, computer vision, and artificial intelligence. For this reason, I have decided to focus my dissertation research at King’s College London on the development and improvement of intelligent systems, that can help detect the patterns underlying pathologies of the human brain. I hope the content of this blog will provide introduction to fellow medical neuro- and computer scientist and incentive to pursue this direction of research. </p>
+			<p align="justify"> A challenge for researchers is to develop technology to help doctors augment performance in medical image diagnosis, requiring integrative information from neuroimaging, information theory, computer vision, and artificial intelligence. For this reason, I have decided to focus my dissertation research at King’s College London on the development and improvement of intelligent systems, that can help detect the patterns underlying pathologies of the human brain. Find out more about the project <a href="https://github.com/ItsNala"> here</a>.</p>
 		</div>
 	</div>
 </div>
@@ -79,229 +79,6 @@
 <br>
 <br>
 <br>
-
-<div class="container">
-	<div class="row">
-		<div>
-			<h4> Intelligent algorithms to support medical image diagnosis </h4>
-			<p align="justify"> Recently, quantitative medical imaging has started to leverage on the fast-paced developments in computer vision and deep learning. State-of-the-art models in deep learning can be applied across various fields in medical imaging, such as in the detection of brain abnormalities and cognitive computing. In the focus of this work lies the application of deep convolutional neural networks (DCNNs) to segment brain lesions on MR scans. In biomedical image analysis, we regularly encounter segmentation and object detection problems, in the following sections I will therefore review common practices and current state-of-the-art. </p>
-			<p align="justify"> We start by examining the underlying pathologies and imaging parameters used in the clinical work flow. We then continue by outlining the segmentation and object detection problems and finally review different state of the art approaches. A large body on deep learning for computer vision research has focused on the application to natural images, however, results from these studies can be of substantial importance to the analysis of medical images and are henceforth noteworthy in this review. In later sections, we will then examine how medical images are different from natural images and how transfer learning can be applied to either type of data sets. </p>
-		</div>
-	</div>
-</div>
-
-
-<br>
-<br>
-<br>
-
-<div class="container">
-	<div class="row">
-		<div class="text-center">
-			<h2> Know-how of brain tumor imaging </h2>
-			<p class="lead"> When researchers and data scientists are usually getting started with machine learning in cancer imaging, they find themselves practicing on prepared, cleaned datasets forming the ideal environment for data scientists to make sense of the data. This, however, is something that needs to be taken into account when working with natural datasets. In practice, the data is messy and differs vastly according to various factors including age, type of lesions, and imaging modality. The following paragraphs shall disclose some of these issues and give a practical approach to shed the light towards the ‘what’ we are scanning as a viable pre-requisite to the 'how' we analyse it. </p>
-		</div>
-	</div>
-</div>
-
-<br>
-<br>
-
-<div class="container">
-	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<h4> Epidemiology across age groups </h4>
-			<p align="justify"> In the analysis of brain tumors several factors need to be taken into account, such as age. Different types of tumors have varying prevalence across age groups, for example according to Stranjalis et al (2013) adults between the age of 52 and 70 are more likely to develop Glioblastoma, Meningiomas, or Metastasis, as opposed to other types of tumors, while adolescents and young adults between the age of 15 and 32 are more likely to develop astrocytes or other types of tumors as opposed to glioblastomas. Current machine learning algorithms are developed to segment high- and low-grade gliomas, however, not to differentiate between different types of lesions, let alone types of tumors and henceforth, only add value if a preliminary diagnosis of gliomas is made. </p>
-		</div>
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<img src="img/age.png" class="img-responsive">
-		</div>
-	</div>
-</div>
-
-<br>
-<br>
-
-<div class="container">
-	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<h4> Similar appearing structural abnormalities </h4>
-			<p align="justify"> In relation to the previously mentioned concern, more factors worth considering are brain abnormalities which may simulate brain tumors and confound the analysis. Such as the increasing likelihood of developing white matter hyper intensities with age, as well as other structural such as vascular malformations, MS-plaque, cysts or aneurysms. Abnormalities as such may cause similar differences to gliomas in signal intensity on MR scans. The following example displays an example of two substantially different types of structural anomalies, multi-focal glioma lesions (left) and tumefactive MS lesions (right) on contrast enhanced T1 weighted scans. The only partial enhancement (open ring) of the lesion on the scan is an indicator of demyelination and is used to differentiate between the two types of lesions. </p>
-		</div>
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<img src="img/comparison.png" class="img-responsive">
-		</div>
-	</div>
-</div>
-
-<br>
-<br>
-
-<div class="container">
-	<div class="row">
-	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-		<div>
-			<h4> Multiple MR sequences and signal intensity in tumor imaging </h4>
-			<p align="justify"> In suspected of brain tumors, multiple MR pulse sequences and contrast enhancement is the imaging gold standard of neuro-oncologic practice. Computed tomography (CT) scanning detects vast tumor lesions, however lacks sensitivity and may risk missing small low-grade gliomas, as well as early cerebrospinal fluid (CFS) spread. The following section is to give a brief overview of the MR sequences utilized in the multimodal brain tumor segmentation benchmark (Menze et al., 2015) with additional information derived from (Villanueva-Meyer et al., 2017). This benchmark was formed of data from conventional MR sequences such as pre- and post-contrast T1, T2, and axial fluid attenuated imaging (FLAIR), other commonly used techniques in tumor evaluation include diffusion-weighted imaging (DWI), susceptibility weighted imaging (SWI) and perfusion. Further information can be found at Villanueva-Meyer et al. (2017). </p>
-			<p align="justify"> T2 and FLAIR imaging highlights structural abnormalities, such as the peritumoral edema (an indicator of malignant glioma) and non-enhancing tumor, with high signal intensity. In the multimodal tumor segmentation benchmark, FLAIR was used to cross-validate the extension of the edema and discriminate it against ventricles and other fluid-filled structures. The initially segmented edema structure has been used in subsequent steps to further be divided into the sub-classes edema, non-enhancing tumor core, and enhancing tumor core. </p>
-			<p align="justify"> T1 weighted imaging may be used to evaluate tissue architecture and structural abnormalities with high intensities in fat tissue. In combination with a contrast agent, commonly used Gadolinium, it enhances breakdown of the blood brain barrier (BBB). In the evaluation of the multimodal brain tumor segmentation benchmark, these sequences were used in the evaluation of the gross tumor core (enhancing and non-enhancing) by evaluating the hyperintensities in T1c images (for high grade cases) together with the inhomogeneous components of the hyper-intense lesion and hypo-intense regions visible in T1 images.  Within the boundaries of the enhancing tumor core, the T1c hypointensities are labelled necrosis (fluid-filled), a sign of dead cancer cells and associated with poorer prognosis (Raza et al., 2002; Liu et al., 2017).</p>
-
-		</div>
-	</div>
-
-<br>
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<img src="img/modalities2.png" class="img-responsive">
-		</div>
-	</div>
-</div>
-
-
-
-<br>
-<br>
-<br>
-
-<div class="container">
-	<div class="row">
-		<div class="text-center">
-			<h2> Deep learning for medical image analysis </h2>
-			<p class="lead"> Convolutional neural networks have consitently outperformed classical machine learning techniques, such as support vector machines. Substantial work in classical machine learning is dedictated towards the annotation of appropriate features, in contrast, deep neural networks process raw input and automatically learn features from training data. The performance of the a given architecture is dependent on many factors, including network width, learning rate, or drop-out. It it theresore crucial to understand the data and architecture for the task at hand. In the following sections, the reader will first be introduced to principles of deep learning and semantic segmentation challenges of natural and medical images. Secondly, two state-of-the-art architectures are examined, which have outperformed previous segmentation techniques by a magnitude: The U-Net architecture (Ronneberger et al., 2015) and Mask R-CNNs (He et al., 2017). Both techniques are supervised learning techniques and require costly annotated ground truth data, lastly we will discuss common sources for open-source medical imaging data and challenges </p>
-		</div>
-	</div>
-</div>
-
-<br>
-<br>
-
-<div class="container">
-	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<h4> Image classification recap</h4>
-			<p align="justify"> In image classification, the image is inputted in a CNN which will compute a feature vector of n dimensions. The information from the feature vector serves as input to some fully connected layer, which will finally output the class scores. The final output in classification networks is a single category label describing the content of the entire image. While this is a valuable tool in challenges such as ImageNet, it is too primitive for the medical imaging task which are intended to benefit tasks such as treatment monitoring or surgical planning. The ideal network ought to not only be able to classify and detect, but also to localize and segment the pathology. To encounter this task, more sophisticated measures are required and will be examined in the following sections. The techniques I will be examining are semantic segmentation, localization, object detection, and instance segmentation. </p>
-		</div>
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<img src="img/classification.png" class="img-responsive">
-		</div>
-	</div>
-</div>
-
-<br> 
-<br>
-
-<div class="container">
-	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<h4> Beyond classification: Segmentation CNNs for computer vision</h4>
-			<p align="justify"> The goal of semantic segmentation is to output a class label not the entire image, but for every pixel of the image. In the example below, we refrain from classifying this whole image as ‘brain’, but label every pixel according to its class as gray matter (GM), white matter (WM), cerebrospinal fluid (CSF), skull, or background. </p>
-			<p align="justify"> As a sliding-window approach, such as common in classification, would be too computationally expensive for every pixel in semantic segmentation, other approaches should be considered. In the following we will be examining autoencoder techniques such as U-Net, as well as architectures based on feature pyramid networks, such as Mask R-CNN. </p>
-		</div>
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<img src="img/segmentation.png" class="img-responsive">
-		</div>
-	</div>
-</div>
-
-<br>
-<br>
-
-<div class="container">
-	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<h4> Medical image segmentation with U-Net </h4>
-			<p align="justify"> U-Net is currently one of the leading models in biomedical image segmentation, the architecture is a fully convolutional network (FCN) that enables fast and precise semantic segmentation. The U-Net can be used to segment images in an end-to-end fashion, i.e. the raw image is fed into the network and outputs the segmentation map. The authors of have initially build the model to segment neuronal structure on electron microscopy images and outperformed existing models at the time. U-Net has since been implemented to various problems in biomedical, as well as natural images. Among others, for the challenge at hand, the segmentation of brain tumours on multimodal MR scans.  </p>
-		</div>
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<img src="img/unetex.png" class="img-responsive">
-		</div>
-	</div>
-</div>
-
-<br>
-<br>
-
-
-<div class="container">
-	<div class="row">
-		<div>
-			<p align="justify"> In the following we will examine the structure of U-Net and explain why it performs so well as compared to other autoencoder models. </p>
-		</div>
-		<div class="center">
-			<img src="img/unet.png" class="img-responsive">
-		</div>
-	</div>
-</div>
-
-<br>
-
-<div class="container">
-	<div class="row">
-		<div>
-			<p align="justify"> The image above conceptualises the U-Net architecture. Each blue box corresponds to a multichannel feature map. The number of channels is denoted on top of the box and the x-y-size is provided at the lower left edge of the box. White boxes represent copied feature maps and the arrows denote the different operations. Most operations are convolutions followed by a non-linear activation function, commonly a rectified linear unit (ReLU). </p>
-		</div>
-		<div class="center">
-			<img src="img/relu.png" class="img-responsive">
-		</div>
-	</div>
-</div>
-
-<br>
-
-<div class="container">
-	<div class="row">
-		<div>
-			<p align="justify"> As compared to state-the-art-models at the time, the clue of U-Net was that it follows a contracting path to capture context, and a symmetric expanding path to re-gain high spatial resolution, which would usually be lost after pooling. This technique is further examined in the following. During max-pooling operation, the input is divided in pooling regions and down-sampled by only computing the maximum values of each region which serves as output to the next layer. This reduces the size of the feature map at the cost of spatial localisation accuracy. After each pooling operation the number of feature channels is increased by a factor of two. Conceptually, this can be understood as increasing the knowledge of the ‘what’ in the image on the cost of decreasing the ‘where’. Classical classification networks, which do not care about the spatial resolution of the prediction end here. However, the U-net is intended to create a high-resolution segmentation map. This is achieved by sequences of up-convolutions and concatenation with high-resolution features from the previous contracting path. </p>
-		</div>
-		<div class="center">
-			<img src="img/pooling.png" class="img-responsive">
-		</div>
-	</div>
-</div>
-
-<br>
-
-<div class="container">
-	<div class="row">
-		<div>
-			<p align="justify"> The up-convolution uses a learned kernel to map each feature to the 2x2 pixel output vector, again followed by a non-linear activation function. A common method to up-sample effectively, i.e. to recover the original location of the pooled values, is fractionally strided convolution. To go into the underlying mechanisms of this technique exceeds the scope of this blog post, however, more information can be found <a href="https://towardsdatascience.com/up-sampling-with-transposed-convolution-9ae4f2df52d0"> here </a>. </p>
-		</div>
-		<div class="center">
-			<img src="img/upconvolution.png" class="img-responsive">
-		</div>
-	</div>
-</div>
-
-<br>
-
-<div class="container">
-	<div class="row">
-		<div>
-			<p align="justify"> The resulting output segmentation map has two channels, for the fore- and background. Due to the padding, the output image will be smaller than the input image and the missing context to predict the pixels at the border regions can be extrapolated by mirroring the input image. </p>
-		</div>
-		<div class="center">
-			<img src="img/padding.png" class="img-responsive">
-		</div>
-	</div>
-</div>
-
-<br>
-
-<div class="container">
-	<div class="row">
-		<div>
-			<p align="justify"> To overcome the limitations of small datasets and increase robustness to variance, data can be augmented with deformations such as random elastic deformations, mirroring, rotating, or flipping of the image. This is essentially important in medical images, as deformations are typical variations in tissue and can be simulate realistically (Dosovitsky et al., 2014). </p>
-		</div>
-		<div class="center">
-			<img src="img/augmentation.png" class="img-responsive">
-		</div>
-	</div>
-</div>
-
-<br>
-
-
-
-
 
 <div class="padding">
 <div class="container">
